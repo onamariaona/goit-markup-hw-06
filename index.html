@@ -433,20 +433,25 @@
           </ul>
         </div>
 
+        <!-- Subscribe -->
         <div class="footer-item-content">
-          <p class="footer-email">Subscribe</p>
+          <p class="footer-form-desc">Subscribe</p>
           <form>
-            <label for="email"></label>
+            <label class="footer-form-field" for="email"></label>
             <div>
               <input
+                class="footer-form-inpus"
                 type="email"
                 name="E-mail"
                 id="E-mail"
                 placeholder="E-mail"
+                required
+                pattern="^[a-zA-Za-яА-Я]+$"
+                minlength="2"
               />
-              <button type="submit">
+              <button class="footer-form-btn" type="submit">
                 Subscribe
-                <svg class="footer-email-icon" width="24" height="24">
+                <svg class="footer-form-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-frame"></use>
                 </svg>
               </button>
@@ -465,7 +470,9 @@
         </button>
 
         <!-- Form -->
-        <p>Leave your contacts and we will call you back</p>
+        <p class="modal-form-desc">
+          Leave your contacts and we will call you back
+        </p>
         <form class="modal-form" name="modal-form">
           <label class="modal-form-field" for="modal-name">Name</label>
           <div class="modal-form-wrapper">
@@ -474,8 +481,11 @@
               type="text"
               name="modal-name"
               id="modal-name"
+              required
+              pattern="^[a-zA-Za-яА-Я]+$"
+              minlength="2"
             />
-            <svg class="" width="18" height="18">
+            <svg class="modal-form-inpus-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
           </div>
@@ -483,9 +493,12 @@
           <div class="modal-form-wrapper">
             <input
               class="modal-form-inpus"
-              type="text"
+              type="tel"
               name="modal-phone"
               id="modal-phone"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
             />
             <svg class="" width="18" height="24">
               <use href="./images/icons.svg#icon-phone-black"></use>
@@ -495,9 +508,12 @@
           <div class="modal-form-wrapper">
             <input
               class="modal-form-inpus"
-              type="text"
+              type="email"
               name="modal-email"
               id="modal-email"
+              required
+              pattern="^[a-zA-Za-яА-Я]+$"
+              minlength="2"
             />
 
             <svg class="" width="18" height="24">
@@ -508,6 +524,7 @@
           <label class="modal-form-field" for="modai-comment">Comment</label>
           <div class="modal-form-wrapper">
             <textarea
+              class="modal-form-message"
               name="modai-comment"
               id="modai-comment"
               rows="6"
@@ -526,7 +543,7 @@
               <a href="./index.html">Privacy Policy</a></span
             >
           </label>
-          <button class="btn btn-light" type="submit">Send</button>
+          <button class="modal-form-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
