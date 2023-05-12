@@ -698,13 +698,21 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 2px;
 width: 16px;
     height: 16px;
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 200ms;
 }
 .form-check-input:checked{
     background-color: #404BBF;
     border-color: #404BBF;
 }
+.form-check-input:focus-visible{
+    outline-color:#404BBF;
+}
 .form-agreement-text{
     font-size: 12px;
+    user-select: none;
    
 }
 .form-agreement-link{
@@ -712,7 +720,7 @@ width: 16px;
 }
 .form-btn{
         display:block
-        margin-left: auto;
+        margin: 0 auto;
         margin-right: auto;
         min-width: 169px;
         height: 56px;
