@@ -434,7 +434,47 @@ color:var(--logo-footer);
     fill: #F4F4FD;
 }
 
+.footer-wrapper{
+    position: relative;
+    margin-right: 80px;
+}
+.footer-form-desc{
+    max-width: 264px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--logo-footer);
+    
+}
+.footer-form-field {
+    display: block;
+    font-size: 12px;
+        line-height: 24px;
+        align-items: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+}
 
+.footer-form-inpus {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+}
+
+.footer-form-btn {
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 24px;
+        gap: 16px;
+        background: #4D5AE5;
+            border-radius: 4px;
+}
+
+.footer-form-icon {}
 
 
 /* portfolio */
@@ -608,9 +648,6 @@ padding: 24px;
 
 /* Modal form */
 
-
-
-
 .modal-title{
     display: block;
     margin-bottom: 10px;
@@ -657,7 +694,7 @@ padding: 24px;
 .form-icon{
     position: absolute;
 top: 50%;
-left: 16px; ;
+left: 16px;
 transform: translateY(-50%);
 transition: 400ms;
 pointer-events: none;
@@ -720,27 +757,27 @@ width: 16px;
 }
 .form-btn{
         display:block
-        margin: 0 auto;
+        justify-content: center;
+        margin-left: auto;
         margin-right: auto;
         min-width: 169px;
         height: 56px;
         border: none;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
         border-radius: 4px;
-
-
-
-
-
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
-
-
+        align-items: center;
+        text-align: center;
         background-color: var(--bg-button);
         color: var(--hero-titlle-color);
         cursor: pointer;
         transition: background-color var(--function-direction);
+}
+.form-btn:hover,
+.form-btn:focus{
+    background-color: var(--bg-button);
 }
