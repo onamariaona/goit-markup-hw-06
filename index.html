@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="container-header container">
@@ -436,26 +437,22 @@
         <!-- Subscribe -->
         <div class="footer-wrapper">
           <p class="footer-form-desc">Subscribe</p>
-          <form>
-            <label class="footer-form-field" for="email"></label>
-            <div>
-              <input
-                class="footer-form-inpus"
-                type="email"
-                name="E-mail"
-                id="E-mail"
-                placeholder="E-mail"
-                required
-                pattern="^[a-zA-Za-яА-Я]+$"
-                minlength="2"
-              />
-              <button class="footer-form-btn" type="submit">
-                Subscribe
-                <svg class="footer-form-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-frame"></use>
-                </svg>
-              </button>
-            </div>
+          <form class="footer-form">
+            <input
+              class="footer-form-inpus"
+              type="email"
+              name="E-mail"
+              placeholder="E-mail"
+              required
+              pattern="^[a-zA-Za-яА-Я]+$"
+              minlength="2"
+            />
+            <button class="footer-form-btn" type="submit">
+              Subscribe
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -531,18 +528,20 @@
               placeholder="Text input"
             ></textarea>
           </div>
-
-          <label class="form-agreement">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              name="modal-agreement"
-            />
-            <span class="form-agreement-text"
-              >I accept the terms and conditions of the
-              <a class="form-agreement-link" href="./index.html"
-                >Privacy Policy</a
-              ></span
+          <input
+            class="form-check-input visually-hidden"
+            type="checkbox"
+            name="user-privacy"
+            id="user-privacy"
+          />
+          <label class="form-agreement" for="user-privacy">
+            <span class="form-agreement-text">
+              <svg class="input-chek-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-chek"></use>
+              </svg> </span
+            >I accept the terms and conditions of the
+            <a class="form-agreement-link" href="./index.html"
+              >Privacy Policy</a
             >
           </label>
           <button class="form-btn btn" type="submit">Send</button>
